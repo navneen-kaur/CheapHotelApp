@@ -1,6 +1,6 @@
 # CheapHotelApp
 
-#How to run the Application
+# How to run the Application
 
 Request URL : http://localhost:8080/hotels?airport=bos&date=2018-12-15
 
