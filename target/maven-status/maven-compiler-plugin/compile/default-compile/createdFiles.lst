@@ -1,0 +1,16 @@
+com/group/cheaphotel/org/controller/CheapHotelApplicationController.class
+com/group/weather/org/domain/Pressure.class
+com/group/weather/org/domain/Sun.class
+com/group/weather/org/domain/Clouds.class
+com/group/weather/org/domain/Humidity.class
+com/group/cheaphotel/org/service/HotelAppServiceImpl.class
+com/group/weather/org/domain/Temperature.class
+com/group/weather/org/domain/City.class
+com/group/cheaphotel/org/service/HotelAppService.class
+com/group/weather/org/domain/Weather.class
+com/group/weather/org/domain/Coord.class
+com/group/weather/org/domain/Wind.class
+com/group/weather/org/domain/Main.class
+com/group/cheaphotel/org/CheapHotelApplication.class
+com/group/cheaphotel/org/domain/HotelResponse.class
+com/group/weather/org/domain/Sys.class
