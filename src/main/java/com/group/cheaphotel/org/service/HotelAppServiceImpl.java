@@ -38,7 +38,7 @@ public class HotelAppServiceImpl implements HotelAppService {
         HotelResponse actualResponse = response.getBody();
 
 
-          HotelResponse filteredThreeResults = ResponseTransform.manageThreeHotelsResult(actualResponse);
+        //  HotelResponse filteredThreeResults = ResponseTransform.manageThreeHotelsResult(actualResponse);
 
        return ResponseTransform.filterHotelPhoneNum(actualResponse);
 

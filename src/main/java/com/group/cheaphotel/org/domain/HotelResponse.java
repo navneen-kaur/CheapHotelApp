@@ -6,7 +6,7 @@ import lombok.*;
 import java.util.ArrayList;
 import java.util.Date;
 
-@Data
+
 @JsonIgnoreProperties
 public class HotelResponse
 {
@@ -14,5 +14,16 @@ public class HotelResponse
 
     private ArrayList<Results> results;
 
+    public HotelResponse(ArrayList<Results> results) {
+        this.results = results;
+    }
 
+
+    public ArrayList<Results> getResults() {
+        return results;
+    }
+
+    public void setResults(ArrayList<Results> results) {
+        this.results = results;
+    }
 }
