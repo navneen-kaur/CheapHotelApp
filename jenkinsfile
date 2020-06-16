@@ -1,18 +1,10 @@
 pipeline {
-  agent none
-  stages {
-    stage('Docker Build') {
-    node {
-        checkout scm
-
-        docker.withRegistry('https://hub.docker.com', 'docker-id') {
-
-            def customImage = docker.build("my-image:1")
-
-            /* Push the container to the custom Registry */
-            customImage.push()
-        }
-    }
-    }
-  }
+     agent { dockerfile true }
+     stages {
+         stage('Test') {
+             steps {
+                 sh 'java --version'
+             }
+         }
+     }
 }
