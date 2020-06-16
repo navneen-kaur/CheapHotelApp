@@ -2,9 +2,17 @@ pipeline {
   agent none
   stages {
     stage('Docker Build') {
-      steps {
-        sh 'docker build -t navneenkaur/hotelappjenkinsfile:latest .'
-      }
+    node {
+        checkout scm
+
+        docker.withRegistry('https://hub.docker.com', 'docker-id') {
+
+            def customImage = docker.build("my-image:1")
+
+            /* Push the container to the custom Registry */
+            customImage.push()
+        }
+    }
     }
   }
 }
